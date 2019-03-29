@@ -18,6 +18,6 @@ This reference architecture represents a simple analytics pipeline that you can 
 
 To deploy the reference architecture to your own account, use the button below.
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2Fgaming-nonrealtime-analytics%2Fmaster%2Fazuredeploy.json" target="_blank"><img src="https://azuredeploy.net/deploybutton.png"/></a>
+<a href="https://aka.ms/arm-gaming-nonrealtime-analytics" target="_blank"><img src="https://azuredeploy.net/deploybutton.png"/></a>
 
 Then, please see the full documentation on the [Non-real Time Dashboard Reference Architectures](https://docs.microsoft.com/gaming/azure/reference-architectures/analytics-non-real-time-dashboard) to learn how it all works.
