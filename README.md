@@ -8,6 +8,7 @@ products:
   - azure-databricks
   - azure-storage
 azureDeploy: https://raw.githubusercontent.com/Azure-Samples/gaming-nonrealtime-analytics/master/azuredeploy.json
+description: "This reference architecture represents a simple analytics pipeline that you can build on Azure."
 ---
 
 # Non-Realtime Analytics for Gaming - Reference Architecture
