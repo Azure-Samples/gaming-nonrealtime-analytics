@@ -107,7 +107,7 @@
 		},
 		"repoUrl": {
 			"type": "string",
-			"defaultValue": "https://github.com/Azure-Samples/gaming-serverless-matchmaker"
+			"defaultValue": "https://github.com/Azure-Samples/gaming-nonrealtime-analytics"
 		},
 		"branch": {
 			"type": "string",
