@@ -135,7 +135,7 @@
             "type": "Microsoft.Storage/storageAccounts",
             "name": "[variables('storageAccountName')]",
             "apiVersion": "2016-12-01",
-            "location": "[parameters('location')]",
+            "location": "[resourceGroup().location]",
             "kind": "Storage",
             "sku": {
                 "name": "[parameters('storageAccountType')]"
@@ -150,7 +150,7 @@
             },
             "name": "[parameters('eventHubNamespaceName')]",
             "apiVersion": "2017-04-01",
-            "location": "[parameters('location')]",
+            "location": "[resourceGroup().location]",
             "tags": {},
             "scale": null,
             "properties": {
@@ -163,7 +163,7 @@
             "type": "Microsoft.EventHub/namespaces/eventhubs",
             "name": "[concat(parameters('eventHubNamespaceName'), '/', parameters('eventHubName'))]",
             "apiVersion": "2017-04-01",
-            "location": "[parameters('location')]",
+            "location": "[resourceGroup().location]",
             "scale": null,
             "properties": {
                 "messageRetentionInDays": 7,
@@ -177,7 +177,7 @@
 		{
 			"type": "Microsoft.Databricks/workspaces",
 			"name": "[parameters('databricksWorkspaceName')]",
-			"location": "[parameters('location')]",
+			"location": "[resourceGroup().location]",
 			"apiVersion": "2018-04-01",
 			"sku": {
 				"name": "[parameters('databricksPricingTier')]"
@@ -190,7 +190,7 @@
 			"type": "Microsoft.Web/serverfarms",
 			"apiVersion": "2016-09-01",
 			"name": "[variables('hostingPlanName')]",
-			"location": "[parameters('location')]",
+			"location": "[resourceGroup().location]",
 			"properties": {
 				"name": "[variables('hostingPlanName')]",
 				"workerSizeId": "[parameters('functionAppWorkerSize')]",
@@ -206,7 +206,7 @@
 			"apiVersion": "2016-08-01",
 			"type": "Microsoft.Web/sites",
 			"name": "[variables('functionAppName')]",
-			"location": "[parameters('location')]",
+			"location": "[resourceGroup().location]",
 			"kind": "functionapp",
 			"properties": {
 				"name": "[variables('functionAppName')]",
